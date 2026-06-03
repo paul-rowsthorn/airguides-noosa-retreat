@@ -162,6 +162,30 @@
       font-size: 0.8rem; color: #999; display: flex; gap: 16px; flex-wrap: wrap;
     }
     .card-detail span { display: flex; align-items: center; gap: 4px; }
+    .card-actions {
+      margin-top: 16px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .location-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 13px;
+      border-radius: 999px;
+      background: var(--deep);
+      color: white;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .location-button:hover {
+      background: var(--teal);
+      transform: translateY(-1px);
+    }
 
     /* OPTION BADGE */
     .badge-a, .badge-b {
@@ -296,6 +320,9 @@
             <span>🌊 Laguna Bay views</span>
             <span>🏖️ Steps to Hastings St</span>
           </div>
+          <div class="card-actions">
+            <a class="location-button" href="https://maps.app.goo.gl/fyye1drbtsJdaPWb7" target="_blank" rel="noopener">📍 Peppers location</a>
+          </div>
         </div>
       </div>
     </div>
@@ -313,19 +340,23 @@
             <span>🚤 Private hire</span>
             <span>🌊 Noosa River</span>
           </div>
+          <div class="card-actions">
+            <a class="location-button" href="https://maps.app.goo.gl/FKq9PWJciZRJzREs5" target="_blank" rel="noopener">📍 Pontoon location</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">Evening · Dinner</p>
+    <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">7:15pm · Dinner</p>
     <div class="meals-row" style="margin-bottom:30px">
       <div class="option-card" style="max-width:560px">
-        <img src="img/sails.png" alt="Locale Restaurant Noosa" class="card-img" style="position:relative">
+        <img src="img/sails.png" alt="Sails Restaurant Noosa" class="card-img" style="position:relative">
         <div class="card-body">
           <span class="card-tag">Restaurant · Noosa</span>
-          <h4>Locale</h4>
-          <p>A celebrated Noosa dining experience — fresh, seasonal and beautifully executed.</p>
+          <h4>Sails Restaurant</h4>
+          <p>A celebrated Noosa dining experience with fresh, seasonal cooking and an elegant coastal setting.</p>
           <div class="card-detail">
+            <span>🍽️ 7:15pm booking</span>
             <span>🍽️ Noosa dining</span>
           </div>
         </div>
@@ -368,6 +399,9 @@
             <span>🌅 Sunrise coastal trail</span>
             <span>🧠 Personal wellness &amp; stress management</span>
           </div>
+          <div class="card-actions">
+            <a class="location-button" href="https://maps.app.goo.gl/PhSUUwwAQwNXCDUX8" target="_blank" rel="noopener">📍 Meeting point</a>
+          </div>
         </div>
       </div>
     </div>
@@ -375,6 +409,9 @@
     <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">9:00am · Breakfast at Peppers Resort</p>
     <div style="margin-bottom:30px; padding:20px; background:#f5f0e8; border-radius:12px; max-width:560px">
       <p style="color:var(--text)">Return to Peppers for a relaxed morning breakfast before the day's activities.</p>
+      <div class="card-actions">
+        <a class="location-button" href="https://maps.app.goo.gl/fyye1drbtsJdaPWb7" target="_blank" rel="noopener">📍 Peppers location</a>
+      </div>
     </div>
 
     <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">Morning · Noosa Everglades Kayaking</p>
@@ -390,6 +427,9 @@
             <span>🚣 Guided kayak tour</span>
             <span>🌿 Pristine wilderness</span>
           </div>
+          <div class="card-actions">
+            <a class="location-button" href="https://maps.app.goo.gl/6mLXgwrM7VNBCdM6A" target="_blank" rel="noopener">📍 Kayaking location</a>
+          </div>
         </div>
       </div>
     </div>
@@ -397,19 +437,22 @@
     <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">1:00pm · Lunch at Habitat</p>
     <div style="margin-bottom:30px; padding:20px; background:#f5f0e8; border-radius:12px; max-width:560px">
       <p style="color:var(--text)">Lunch at Habitat — one of Noosa's most celebrated dining destinations, known for its commitment to local produce and seasonal cooking.</p>
+      <div class="card-actions">
+        <a class="location-button" href="https://maps.app.goo.gl/6mLXgwrM7VNBCdM6A" target="_blank" rel="noopener">📍 Habitat location</a>
+      </div>
     </div>
 
     <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">8:00pm · Dinner</p>
     <div class="meals-row">
       <div class="option-card" style="max-width:560px">
-        <img src="img/sails.png" alt="Sails Restaurant" class="card-img" style="position:relative">
+        <img src="img/sails.png" alt="Bistro C" class="card-img" style="position:relative">
         <div class="card-body">
           <span class="card-tag">Fine Dining · Noosa Beach</span>
-          <h4>Sails Restaurant</h4>
-          <p>The only venue of its kind on the Sunshine Coast — an exclusive patio with panoramic views over Noosa Beach. Chef Paul's menus source ingredients with integrity, creating clean, thoughtful and uncomplicated dishes. 75 Hastings St, right at the water's edge.</p>
+          <h4>Bistro C</h4>
+          <p>A relaxed beachfront dinner on Hastings Street, pairing Noosa's coastal energy with a polished bistro menu, ocean views and an easy end-of-day atmosphere.</p>
           <div class="card-detail">
             <span>🌅 Beachfront views</span>
-            <span>🐟 Fresh seasonal menu</span>
+            <span>🐟 Fresh coastal menu</span>
           </div>
         </div>
       </div>
@@ -424,16 +467,19 @@
       <div class="day-number">3</div>
       <div class="day-info">
         <h3>Reflect &amp; Depart</h3>
-        <p>Tuesday 9 June · Breakfast · AI Session · Departures</p>
+        <p>Tuesday 9 June · Breakfast · AI Session · Lunch · Departures</p>
       </div>
     </div>
 
     <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">Morning · Breakfast at Peppers Resort</p>
     <div style="margin-bottom:30px; padding:20px; background:#f5f0e8; border-radius:12px; max-width:560px">
       <p style="color:var(--text)">A final morning breakfast at Peppers before the closing session and departures.</p>
+      <div class="card-actions">
+        <a class="location-button" href="https://maps.app.goo.gl/fyye1drbtsJdaPWb7" target="_blank" rel="noopener">📍 Peppers location</a>
+      </div>
     </div>
 
-    <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">Morning · Bespoke AI Session</p>
+    <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">10:00am · Bespoke AI Session</p>
     <div class="meals-row" style="margin-bottom:30px">
       <div class="option-card" style="max-width:560px">
         <img src="img/peregian.png" alt="Peregian Digital Hub" class="card-img" style="position:relative">
@@ -445,6 +491,28 @@
             <span>🤖 Targeted per company</span>
             <span>💡 Hands-on AI Lab</span>
             <span>🏄 Peregian Beach</span>
+          </div>
+          <div class="card-actions">
+            <a class="location-button" href="https://maps.app.goo.gl/iHqRHvp9ZEorrzTp7" target="_blank" rel="noopener">📍 AI Session location</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:0.85rem; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:16px; font-weight:600">12:30pm · Lunch at Peregian Beach Hotel</p>
+    <div class="meals-row" style="margin-bottom:30px">
+      <div class="option-card" style="max-width:560px">
+        <img src="img/peregian-beach-hotel.png" alt="Peregian Beach Hotel" class="card-img" style="position:relative">
+        <div class="card-body">
+          <span class="card-tag">Beachside Lunch · Peregian Beach</span>
+          <h4>Peregian Beach Hotel</h4>
+          <p>A relaxed beachside lunch to close the retreat, with coastal hospitality, fresh produce and time to debrief before departures.</p>
+          <div class="card-detail">
+            <span>🍽️ 12:30pm booking</span>
+            <span>🏖️ Peregian Beach</span>
+          </div>
+          <div class="card-actions">
+            <a class="location-button" href="https://maps.app.goo.gl/z7EF6H3bJP9o6WpT8" target="_blank" rel="noopener">📍 Hotel location</a>
           </div>
         </div>
       </div>
@@ -466,7 +534,7 @@
     <div class="summary-item">
       <div class="icon">🍽️</div>
       <h4>Dining</h4>
-      <p>Locale · Sails Restaurant<br><span style="font-size:1rem; opacity:0.7">+ Habitat Lunch</span></p>
+      <p>Sails Restaurant · Bistro C<br><span style="font-size:1rem; opacity:0.7">+ Habitat &amp; Peregian lunches</span></p>
     </div>
     <div class="summary-item">
       <div class="icon">🧠</div>
